@@ -1,0 +1,130 @@
+/*========body article =========*/
+.carousel .carousel-actions button{
+    display: none;
+}
+
+.heading{
+    text-align: center;
+}
+
+.section-para{
+    padding:.5em;
+    text-align: center;  
+}
+
+h2.subheading{
+    margin-top: .5em;
+    text-align: center;
+} 
+
+section{
+    border-bottom:1px solid rgba(0, 0, 0, 0.205);
+} 
+
+ .result-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.results{
+    text-align: center;
+    background: url("../image/weather1.jpg")top no-repeat;     
+}
+
+
+.javascript-image{
+    width:100%;
+    padding:1em;
+    height:500px;
+    border-radius: 10%;
+}
+
+.javaLink {
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    margin-left:0.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.javaLink:hover{
+    text-decoration: underline;
+    color:var(--black);
+    background:var(--orange);
+    border-radius: 10px;
+}
+
+
+
+
+
+/*--------making carousel desktop version---------*/
+@media (min-width:880px){
+.carousel{
+    position: relative;;
+}
+.carousel-item{
+    display: none;
+}
+.carousel .carousel-item-visible{
+    display:block;
+    animation: curtain 1ms ease-out  ;
+}
+
+.carousel-actions{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top:70%; 
+    transform: translateY(-50%);
+}
+.carousel .carousel-actions button{
+    display: block;
+    border-radius: 50px;
+    background:var(--white);
+    cursor: pointer;
+    border:0;
+    font-size:1em;
+    font-weight: bold;
+    width:50px;
+}
+.carousel-actions button:hover{
+    background:var(--orange);
+    
+}
+#carousel-button-prev{
+    margin-left:20px;
+}
+#carousel-button-next{
+    margin-right:20px;
+}
+.carousel-item-hidden{
+    display: none;
+}
+.text-structure{
+    position:absolute;
+    top:50%;
+    left:65%;
+    transform: translate(-50%, -50%);
+    color:#f2f2f2; 
+}
+
+.result-section{
+    display: flex;
+ flex-direction: row;
+   justify-content: space-around;
+}
+.result{
+    display:flex;
+    flex-direction: row;
+}
+.space-launch{
+    width:50%;
+}
+.results{
+    padding:0.5em;
+}
+}

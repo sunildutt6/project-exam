@@ -1,0 +1,121 @@
+.mode {
+    cursor: pointer;
+    display: flex;
+    margin: 1em auto;
+    font-size: 1.4em;
+    border-radius: 15px;
+    padding: 0 .5em;
+  
+
+}
+.mode:hover,
+.details:hover{
+    background:#F27F3D;
+    animation: mode 1s ease-out;
+    color:#f2f2f2;
+}
+
+
+/* =============Rocket & dragons & ships mode ===================*/
+
+.loader-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 5rem;
+  }
+    
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px #f2f2f2;
+  }
+  
+  .rocket-card {
+    width: 100%;
+  }
+
+  .card-header {
+      margin-top: 1.5rem 0;
+    padding: 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-name {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #f2f2f2;
+    padding-bottom: 0.5rem;
+  }
+  
+  .card-para {
+    font-size:1.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #f2f2f2;
+  }
+  .breadcrumb-nav {
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    text-shadow: 1px 1px 2px #f2f2f2;
+  }
+
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #0d4fa6;
+    border-top: 10px solid #5D84A6;
+    border-right: 10px solid #F27F3D;
+    border-bottom: 10px solid #F2E96B;
+    border-left: 10px solid #0d4fa6;
+    border-radius: 50%; 
+    animation: rotate 1s linear infinite;
+  }
+  
+
+/*================desktop================*/
+
+@media (min-width:880px){
+    .mode {
+        cursor: pointer;
+        position: absolute;
+       bottom:10%;
+        left: 45%;
+        font-size: 1.4em;
+        border-radius: 15px;
+        padding: 0 .5em;
+      
+    
+    }
+    .rocket-card {
+      width: 100%;
+      height: 60vh;
+      border-radius: 20px;
+    }
+    
+    .ship-container{
+      display: flex;
+      flex-direction: column;
+    }
+   
+}
+
+
+@keyframes rotate {
+  0% {
+    transform:rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes mode{
+  from{opacity:0%; }
+  to{opacity:100%; }
+}

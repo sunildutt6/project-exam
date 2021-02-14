@@ -1,0 +1,76 @@
+article{
+    display:grid;
+    justify-content:center;
+}
+
+body{  
+    background: no-repeat url("../image/img-wide3.jpg");
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh; 
+}
+
+footer{
+    background: linear-gradient(45deg,#5d84a6, #ffffff);
+}
+
+form {
+    padding: 2em;
+    background: white;
+    border-radius:1rem;
+}
+
+input,textarea {
+    width:100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 150px;
+        padding: .5rem 1rem;
+    background: orange;
+    font-weight: 800;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    box-shadow: 1px 1px inset white;
+    border-radius:10px 0 10px 0;
+        margin-top:1rem;
+        cursor: pointer;
+        text-shadow: 1px 1px 2px white;
+}
+
+button:hover{
+    background:linear-gradient(45deg, #F2E96B, #Ffffff); 
+}
+
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-error{
+    display: none;
+    color:red;
+}
+
+.message {
+    background: green;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 1rem ;
+    margin-bottom: 1rem;
+}
+
+
+/*----Desktop Screens */
+@media (min-width:880px){
+
+    article{
+    margin:1em;
+    } 
+    
+}
